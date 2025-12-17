@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot Místico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            roxo: '#6B21A8',
+            roxoDark: '#4B0D75',
+            dourado: '#FFD700',
+            branco: '#FFFFFF',
+          },
+          fontFamily: {
+            tarot: ['"Cinzel"', 'serif'],
+          },
+        },
+      }
+    }
+  </script>
+</head>
+<body class="bg-roxo text-white font-tarot">
+
+  <!-- Header -->
+  <header class="bg-roxoDark shadow-md p-6 flex justify-between items-center">
+    <h1 class="text-3xl font-bold text-dourado">Tarot Místico</h1>
+    <nav>
+      <ul class="flex gap-6">
+        <li><a href="#sobre" class="hover:text-dourado transition">Sobre</a></li>
+        <li><a href="#consultas" class="hover:text-dourado transition">Consultas</a></li>
+        <li><a href="#contato" class="hover:text-dourado transition">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-roxo via-roxoDark to-black">
+    <h2 class="text-5xl md:text-6xl font-bold text-dourado mb-4">Descubra o seu destino</h2>
+    <p class="text-xl md:text-2xl text-white mb-8">Consultas de Tarot online para iluminar o seu caminho</p>
+    <a href="#consultas" class="px-8 py-4 bg-dourado text-roxo font-bold rounded-lg shadow-lg hover:bg-yellow-400 transition">Agende sua Consulta</a>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-20 px-6 bg-roxo">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-dourado mb-6">Sobre Nós</h3>
+      <p class="text-white text-lg">Somos especialistas em Tarot, oferecendo leituras precisas e espirituais para ajudar você em momentos decisivos da sua vida.</p>
+    </div>
+  </section>
+
+  <!-- Consultas -->
+  <section id="consultas" class="py-20 px-6 bg-roxoDark">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-dourado mb-6">Nossas Consultas</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 border-2 border-dourado rounded-xl shadow-lg hover:scale-105 transition bg-roxo">
+          <h4 class="text-2xl font-bold mb-4 text-dourado">Tarot Online</h4>
+          <p class="text-white">Consultas online detalhadas para tirar suas dúvidas e iluminar seu caminho.</p>
+        </div>
+        <div class="p-6 border-2 border-dourado rounded-xl shadow-lg hover:scale-105 transition bg-roxo">
+          <h4 class="text-2xl font-bold mb-4 text-dourado">Consulta Presencial</h4>
+          <p class="text-white">Atendimento personalizado, proporcionando uma experiência profunda e espiritual.</p>
+        </div>
+        <div class="p-6 border-2 border-dourado rounded-xl shadow-lg hover:scale-105 transition bg-roxo">
+          <h4 class="text-2xl font-bold mb-4 text-dourado">Orientação Espiritual</h4>
+          <p class="text-white">Auxílio em decisões importantes com foco na energia e intuição.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-20 px-6 bg-roxo">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-dourado mb-6">Entre em Contato</h3>
+      <form class="flex flex-col gap-4">
+        <input type="text" placeholder="Nome" class="p-4 rounded-lg border-2 border-dourado text-roxo bg-white">
+        <input type="email" placeholder="Email" class="p-4 rounded-lg border-2 border-dourado text-roxo bg-white">
+        <textarea placeholder="Mensagem" class="p-4 rounded-lg border-2 border-dourado text-roxo bg-white"></textarea>
+        <button type="submit" class="p-4 bg-dourado text-roxo font-bold rounded-lg hover:bg-yellow-400 transition">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-roxoDark p-6 text-center text-white">
+    © 2025 Tarot Místico. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
