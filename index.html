@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarot Místico</title>
+  <title>Diário Místico</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -23,79 +23,71 @@
     }
   </script>
 </head>
+
 <body class="bg-roxo text-white font-tarot">
 
   <!-- Header -->
   <header class="bg-roxoDark shadow-md p-6 flex justify-between items-center">
-    <h1 class="text-3xl font-bold text-dourado">Tarot Místico</h1>
+    <h1 class="text-3xl font-bold text-dourado">Diário Místico</h1>
     <nav>
       <ul class="flex gap-6">
         <li><a href="#sobre" class="hover:text-dourado transition">Sobre</a></li>
         <li><a href="#planos" class="hover:text-dourado transition">Consultas</a></li>
+        <li><a href="diario.html" class="hover:text-dourado transition">Diário</a></li>
         <li><a href="#contato" class="hover:text-dourado transition">Contato</a></li>
       </ul>
+      
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-roxo via-roxoDark to-black">
-    <h2 class="text-5xl md:text-6xl font-bold text-dourado mb-4">Descubra o seu destino</h2>
-    <p class="text-xl md:text-2xl text-white mb-8">Consultas de Tarot online para iluminar o seu caminho</p>
-    <a href="#planos" class="px-8 py-4 bg-dourado text-roxo font-bold rounded-lg shadow-lg hover:bg-yellow-400 transition">Agende sua Consulta</a>
-  </section>
-
-  <!-- Sobre -->
-  <section id="sobre" class="py-20 px-6 bg-roxo">
-    <div class="max-w-5xl mx-auto text-center">
-      <h3 class="text-4xl font-bold text-dourado mb-6">Sobre Nós</h3>
-      <p class="text-white text-lg">Somos especialistas em Tarot, oferecendo leituras precisas e espirituais para ajudar você em momentos decisivos da sua vida.</p>
-    </div>
-  </section>
-
-  <!-- Planos de Consultas -->
-  <section id="planos" class="py-20 px-6 bg-roxoDark">
+  <!-- Conteúdo -->
+  <section class="py-20 px-6">
     <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-4xl md:text-5xl font-bold text-dourado mb-12">Nossas Consultas</h2>
+      <h2 class="text-4xl md:text-5xl font-bold text-dourado mb-12">
+        Diários Espirituais
+      </h2>
+
       <div class="grid md:grid-cols-3 gap-8">
 
-        <!-- Card 1 -->
-        <div class="bg-roxo rounded-xl border-2 border-dourado p-8 shadow-lg hover:scale-105 transition transform">
-          <h3 class="text-2xl font-bold text-dourado mb-4">Pergunta objetiva + conselho</h3>
-          <p class="text-white mb-6">Ideal para dúvidas rápidas ou decisões pontuais.</p>
-          <span class="text-3xl font-bold text-dourado">R$ 20,00</span>
+        <!-- Diário 1 -->
+        <div class="bg-roxoDark border-2 border-dourado rounded-xl p-6 shadow-lg hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-dourado mb-3">Diário do Amor</h3>
+          <p class="mb-4">
+            Reflexões, tiragens e mensagens sobre relacionamentos e sentimentos.
+          </p>
+          <button class="px-6 py-2 bg-dourado text-roxo font-bold rounded hover:bg-yellow-400 transition">
+            Ler Diário
+          </button>
         </div>
 
-        <!-- Card 2 -->
-        <div class="bg-roxo rounded-xl border-2 border-dourado p-8 shadow-lg hover:scale-105 transition transform">
-          <h3 class="text-2xl font-bold text-dourado mb-4">4 perguntas + conselho</h3>
-          <p class="text-white mb-6">Perfeito para quem deseja explorar diferentes áreas da vida.</p>
-          <span class="text-3xl font-bold text-dourado">R$ 70,00</span>
+        <!-- Diário 2 -->
+        <div class="bg-roxoDark border-2 border-dourado rounded-xl p-6 shadow-lg hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-dourado mb-3">Diário Espiritual</h3>
+          <p class="mb-4">
+            Anotações espirituais, sinais do universo e mensagens do Tarot.
+          </p>
+          <button class="px-6 py-2 bg-dourado text-roxo font-bold rounded hover:bg-yellow-400 transition">
+            Ler Diário
+          </button>
         </div>
 
-        <!-- Card 3 -->
-        <div class="bg-roxo rounded-xl border-2 border-dourado p-8 shadow-lg hover:scale-105 transition transform">
-          <h3 class="text-2xl font-bold text-dourado mb-4">Tiragem completa + conselho</h3>
-          <p class="text-white mb-6">Leitura detalhada, profunda e completa do seu caminho e energias.</p>
-          <span class="text-3xl font-bold text-dourado">R$ 150,00</span>
+        <!-- Diário 3 -->
+        <div class="bg-roxoDark border-2 border-dourado rounded-xl p-6 shadow-lg hover:scale-105 transition">
+          <h3 class="text-2xl font-bold text-dourado mb-3">Diário do Autoconhecimento</h3>
+          <p class="mb-4">
+            Reflexões pessoais, aprendizados e crescimento interior.
+          </p>
+          <button class="px-6 py-2 bg-dourado text-roxo font-bold rounded hover:bg-yellow-400 transition">
+            Ler Diário
+          </button>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="py-20 px-6 bg-roxo">
-    <div class="max-w-3xl mx-auto text-center">
-      <h3 class="text-4xl font-bold text-dourado mb-6">Entre em Contato</h3>
-      <p class="text-white mb-8">Para consultas e dúvidas, clique no botão abaixo e fale diretamente conosco no WhatsApp:</p>
-      <a href="https://wa.link/rel05f" target="_blank" class="inline-block px-8 py-4 bg-dourado text-roxo font-bold text-xl rounded-lg shadow-lg hover:bg-yellow-400 transition">
-        Chamar no WhatsApp
-      </a>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer class="bg-roxoDark p-6 text-center text-white">
+  <footer class="bg-roxoDark p-6 text-center">
     © 2025 Tarot Místico. Todos os direitos reservados.
   </footer>
 
